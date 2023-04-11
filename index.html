@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz literario</h1>
+        <p>Juego de preguntas</p>
+    </header>
+
+    <div class="container">
+        <section id="p0">
+            <h3>1. ¿Quién fue la autora de <em>Mujercitas</em>?</h3>
+            <label>
+                <input type="radio" value="1" name="p0" onclick="respuesta(0, this)"> Jane Austen
+            </label>
+            <label>
+                <input type="radio" value="2" name="p0" onclick="respuesta(0, this)"> Charlotte Brontë
+            </label>
+            <label>
+                <input type="radio" value="3" name="p0" onclick="respuesta(0, this)"> Louisa May Alcott
+            </label>
+        </section>
+
+        <section id="p1">
+            <h3>2. ¿Cuál es el nombre del autor argentino Borges?</h3>
+            <label>
+                <input type="radio" value="1" name="p1" onclick="respuesta(1, this)"> Jorge Luis
+            </label>
+            <label>
+                <input type="radio" value="2" name="p1" onclick="respuesta(1, this)"> Mario
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1" onclick="respuesta(1, this)"> Julio
+            </label>
+        </section>
+
+        <section id="p2">
+            <h3>3. ¿Cuál de las siguientes obras fue escrita por el autor Adolfo Bioy Casares?</h3>
+            <label>
+                <input type="radio" value="1" name="p2" onclick="respuesta(2, this)"> El Aleph
+            </label>
+            <label>
+                <input type="radio" value="2" name="p2" onclick="respuesta(2, this)"> Dormir al sol
+            </label>
+            <label>
+                <input type="radio" value="3" name="p2" onclick="respuesta(2, this)"> El retrato de Dorian Gray
+            </label>
+        </section>
+
+        <section id="p3">
+            <h3>4. ¿Dónde nació Julio Cortázar?</h3>
+            <label>
+                <input type="radio" value="1" name="p3" onclick="respuesta(3, this)"> Francia
+            </label>
+            <label>
+                <input type="radio" value="2" name="p3" onclick="respuesta(3, this)"> Bélgica
+            </label>
+            <label>
+                <input type="radio" value="3" name="p3" onclick="respuesta(3, this)"> Argentina
+            </label>
+        </section>
+
+        <section id="p4">
+            <h3>5. ¿A qué género pertenece la novela <em>Fahrenheit 451</em> ?</h3>
+            <label>
+                <input type="radio" value="1" name="p4" onclick="respuesta(4, this)"> Fantástico
+            </label>
+            <label>
+                <input type="radio" value="2" name="p4" onclick="respuesta(4, this)"> Misterio
+            </label>
+            <label>
+                <input type="radio" value="3" name="p4" onclick="respuesta(4, this)"> Ciencia ficción
+            </label>
+        </section>
+
+        <button onclick="corregir()">Corregir</button>
+        <h2>Cantidad acertadas: <span id="resultado"></span></h2>
+    </div>
+
+    <script src="main.js"></script>
+
+
+</body>
+</html>
